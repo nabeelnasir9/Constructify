@@ -32,6 +32,8 @@ const HomeMainEnd = () => {
   return (
     <>
       <div className="homeMainEnd-container">
+      <div className="homeMainEnd-container_wrapper">
+
         <div className="homeMainEnd-left">
           <h1 style={{borderBottom:'2px solid #ffb703'}}>
             What <span style={{ color: "#ffb703" }}>We Do:</span>
@@ -55,6 +57,7 @@ const HomeMainEnd = () => {
         </div>
         <div className="homeMainEnd-right">
           <img src={Boy} alt="Description" className="homeMainEnd-image" />
+        </div>
         </div>
       </div>
       <div className="homeMainEnd-bottomLine"></div>
