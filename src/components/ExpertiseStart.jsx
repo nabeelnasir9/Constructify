@@ -1,12 +1,12 @@
 import "../styles/ExpertiseStart.css";
 import Image1 from "../assets/Expertise/image1.jpg";
-import Image2 from "../assets/Expertise/image2.jpg";
-import Image3 from "../assets/Expertise/image3.jpg";
-import Image4 from "../assets/Expertise/image4.png";
-import Image5 from "../assets/Expertise/image5.jpg";
-import Image6 from "../assets/Expertise/image6.png";
-import Image7 from "../assets/Expertise/image7.jpg";
-import Image8 from "../assets/Expertise/image8.jpeg";
+import Image2 from "../assets/Expertise/Image2.jpg";
+import Image3 from "../assets/Expertise/Image3.jpg";
+import Image4 from "../assets/Expertise/Image4.png";
+import Image5 from "../assets/Expertise/Image5.jpg";
+import Image6 from "../assets/Expertise/Image6.png";
+import Image7 from "../assets/Expertise/Image7.jpg";
+import Image8 from "../assets/Expertise/Image8.jpeg";
 
 const ExpertiseStart = () => {
   return (
