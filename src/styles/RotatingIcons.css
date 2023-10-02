@@ -2,8 +2,8 @@
     position: relative;
     width: 50vw;
     height: 50vw;
-    max-width: 80%; /* Increase to allow larger size */
-    max-height: 80%; /* Increase to allow larger size */
+    max-width: 80%;
+    max-height: 80%;
     margin: 5vh auto;
     border-radius: 50%;
 }
@@ -14,42 +14,44 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
+    text-align: center;
+    font-size: 40px;
+    width: 40%;
+    margin: 0 auto;
+    font-weight: 600;
 }
 
 .orbit {
     position: absolute;
-    top: 50%;
+    top: 52%;
     left: 50%;
-    border: 1px solid rgba(90, 89, 89, 0.337);
+    border: 1px solid rgba(90, 89, 89, 0.200);
     border-radius: 50%;
     z-index: 0;
     transform: translate(-50%, -50%);
 }
 
 .orbit1 {
-    width: 66%;
-    height: 66%;
+    width: 100%;
+    height: 100%;
 }
 
 .orbit2 {
-    width: 33%;
-    height: 33%;
+    width: 60%;
+    height: 60%;
 }
 
 .electron {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 5%;  /* Responsive width for electrons */
-    height: 5%;  /* Responsive height for electrons */
+    top: 47%;
+    left: 47%;
+    width: 7%;
+    height: 7%;
     z-index: 1;
-    animation-duration: 13s;
+    animation-duration: 35s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
-
-/* Updated animations using relative dimensions */
-/* ... (Your animation keyframes would remain largely unchanged, just adjust the translateX values to percentages, as demonstrated in previous answers) ... */
 
 @media (max-width: 768px) {
     .atomContainer {
@@ -65,7 +67,6 @@
     }
 }
 
-
 /* First orbit (Clockwise) animations */
 .electronType1 { animation-name: spin1_60; }
 .electronType2 { animation-name: spin1_120; }
@@ -75,33 +76,33 @@
 .electronType6 { animation-name: spin1_360; }
 
 @keyframes spin1_60 {
-    0% { transform: rotate(60deg) translateX(100px) rotate(-60deg); }
-    100% { transform: rotate(420deg) translateX(100px) rotate(-420deg); }
+    0% { transform: rotate(60deg) translateX(720%) rotate(-60deg); }
+    100% { transform: rotate(420deg) translateX(720%) rotate(-420deg); }
 }
 
 @keyframes spin1_120 {
-    0% { transform: rotate(120deg) translateX(100px) rotate(-120deg); }
-    100% { transform: rotate(480deg) translateX(100px) rotate(-480deg); }
+    0% { transform: rotate(120deg) translateX(720%) rotate(-120deg); }
+    100% { transform: rotate(480deg) translateX(720%) rotate(-480deg); }
 }
 
 @keyframes spin1_180 {
-    0% { transform: rotate(180deg) translateX(100px) rotate(-180deg); }
-    100% { transform: rotate(540deg) translateX(100px) rotate(-540deg); }
+    0% { transform: rotate(180deg) translateX(720%) rotate(-180deg); }
+    100% { transform: rotate(540deg) translateX(720%) rotate(-540deg); }
 }
 
 @keyframes spin1_240 {
-    0% { transform: rotate(240deg) translateX(100px) rotate(-240deg); }
-    100% { transform: rotate(600deg) translateX(100px) rotate(-600deg); }
+    0% { transform: rotate(240deg) translateX(720%) rotate(-240deg); }
+    100% { transform: rotate(600deg) translateX(720%) rotate(-600deg); }
 }
 
 @keyframes spin1_300 {
-    0% { transform: rotate(300deg) translateX(100px) rotate(-300deg); }
-    100% { transform: rotate(660deg) translateX(100px) rotate(-660deg); }
+    0% { transform: rotate(300deg) translateX(720%) rotate(-300deg); }
+    100% { transform: rotate(660deg) translateX(720%) rotate(-660deg); }
 }
 
 @keyframes spin1_360 {
-    0% { transform: rotate(360deg) translateX(100px) rotate(-360deg); }
-    100% { transform: rotate(720deg) translateX(100px) rotate(-720deg); }
+    0% { transform: rotate(360deg) translateX(720%) rotate(-360deg); }
+    100% { transform: rotate(720deg) translateX(720%) rotate(-720deg); }
 }
 
 /* Second orbit (Anticlockwise) animations */
@@ -113,32 +114,31 @@
 .electronType12 { animation-name: spin2_360; }
 
 @keyframes spin2_60 {
-    0% { transform: rotate(-60deg) translateX(50px) rotate(60deg); }
-    100% { transform: rotate(-420deg) translateX(50px) rotate(420deg); }
+    0% { transform: rotate(-60deg) translateX(430%) rotate(60deg); }
+    100% { transform: rotate(-420deg) translateX(430%) rotate(420deg); }
 }
 
 @keyframes spin2_120 {
-    0% { transform: rotate(-120deg) translateX(50px) rotate(120deg); }
-    100% { transform: rotate(-480deg) translateX(50px) rotate(480deg); }
+    0% { transform: rotate(-120deg) translateX(430%) rotate(120deg); }
+    100% { transform: rotate(-480deg) translateX(430%) rotate(480deg); }
 }
 
 @keyframes spin2_180 {
-    0% { transform: rotate(-180deg) translateX(50px) rotate(180deg); }
-    100% { transform: rotate(-540deg) translateX(50px) rotate(540deg); }
+    0% { transform: rotate(-180deg) translateX(430%) rotate(180deg); }
+    100% { transform: rotate(-540deg) translateX(430%) rotate(540deg); }
 }
 
 @keyframes spin2_240 {
-    0% { transform: rotate(-240deg) translateX(50px) rotate(240deg); }
-    100% { transform: rotate(-600deg) translateX(50px) rotate(600deg); }
+    0% { transform: rotate(-240deg) translateX(430%) rotate(240deg); }
+    100% { transform: rotate(-600deg) translateX(430%) rotate(600deg); }
 }
 
 @keyframes spin2_300 {
-    0% { transform: rotate(-300deg) translateX(50px) rotate(300deg); }
-    100% { transform: rotate(-660deg) translateX(50px) rotate(660deg); }
+    0% { transform: rotate(-300deg) translateX(430%) rotate(300deg); }
+    100% { transform: rotate(-660deg) translateX(430%) rotate(660deg); }
 }
 
 @keyframes spin2_360 {
-    0% { transform: rotate(-360deg) translateX(50px) rotate(360deg); }
-    100% { transform: rotate(-720deg) translateX(50px) rotate(720deg); }
+    0% { transform: rotate(-360deg) translateX(430%) rotate(360deg); }
+    100% { transform: rotate(-720deg) translateX(430%) rotate(720deg); }
 }
-

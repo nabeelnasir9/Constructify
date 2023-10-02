@@ -14,8 +14,9 @@ import '../styles/RotatingIcons.css';
 
 export default function RotatingIcons() {
     return (
+        <>
         <div className="atomContainer">
-            <span className="nucleus">Our tools</span>
+            <span className="nucleus">Explore <span style={{color:'#ffb703'}}>Our Tools,</span> That We Use</span>
             <div className="orbit orbit1"></div>
             <div className="orbit orbit2"></div>
             
@@ -32,5 +33,6 @@ export default function RotatingIcons() {
             <img src={img11} alt="electron-type11" className="electron electronType11" />
             <img src={img12} alt="electron-type12" className="electron electronType12" />
         </div>
+        </>
     );
 }

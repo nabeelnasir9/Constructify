@@ -1,0 +1,101 @@
+.contactus-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 5%;
+    background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,183,3,1) 150%);
+}
+
+.contactus-form-container {
+    flex: 0 0 40%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contactus-header, 
+.contactus-subheader {
+    margin-bottom: 20px;
+}
+
+.contactus-user-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contactus-input-name, 
+.contactus-input-email, 
+.contactus-input-phone, 
+.contactus-input-service, 
+.contactus-input-message, 
+.contactus-send-button {
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #ffb703;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.contactus-input-name:hover,
+.contactus-input-email:hover,
+.contactus-input-phone:hover,
+.contactus-input-service:hover,
+.contactus-input-message:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactus-send-button {
+    background-color: #ffb703;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.contactus-send-button:hover {
+    background-color: #0056b3;
+}
+
+.contactus-image-container {
+    flex: 0.6;
+    padding: 20px;
+}
+
+.contactus-image {
+    max-width: 100%;
+    border-radius: 10px;
+    /* box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); */
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .contactus-container {
+        flex-direction: column;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .contactus-form-container, 
+    .contactus-image-container {
+        flex: 100%;
+    }
+}
+
+
+label {
+    display: block;
+    color: #333;
+    font-weight: 600;
+}
+
+.contactus-user-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* adjusted gap to account for label spacing */
+}

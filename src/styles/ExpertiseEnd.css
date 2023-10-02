@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@600;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap');
 .marquee-container {
 width: 100%;
     overflow: hidden;
@@ -19,7 +19,7 @@ width: 100%;
 
 .marquee-container::before {
     left: 0%;
-    background: linear-gradient(to right, rgb(6, 6, 6), rgba(255,255,255,0));
+    background: linear-gradient(to right, rgb(6, 6, 6), rgba(9, 9, 9, 0));
 }
 
 .marquee-container::after {
@@ -39,6 +39,7 @@ width: 100%;
     color: white;
     font-size: 24px;
     font-weight: 700;
+    font-family: 'Orbitron', sans-serif;
 
 }
 
