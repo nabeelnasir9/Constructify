@@ -1,0 +1,55 @@
+  @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@600;700&display=swap');
+.marquee-container {
+width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: black; /* You can adjust this to match your site's background color */
+    margin: 0 auto;
+}
+
+.marquee-container::before,
+.marquee-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 400px;  /* width of the blur/fade effect */
+    height: 100%;
+    z-index: 2;   /* above the marquee content */
+}
+
+.marquee-container::before {
+    left: 0%;
+    background: linear-gradient(to right, rgb(6, 6, 6), rgba(255,255,255,0));
+}
+
+.marquee-container::after {
+    right: 0%;
+    background: linear-gradient(to left, rgb(4, 4, 4), rgba(255,255,255,0));
+}
+
+.marquee {
+    display: flex;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+}
+
+.category, .separator {
+    padding: 50px 10px;
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.separator {
+    font-size: 30px;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

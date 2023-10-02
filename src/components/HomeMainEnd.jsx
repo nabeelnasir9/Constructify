@@ -8,17 +8,17 @@ const HomeMainEnd = () => {
 
   useEffect(() => {
     const interval1 = setInterval(() => {
-      if (firstNumber < 59) setFirstNumber((prev) => prev + 2);
+      if (firstNumber < 359) setFirstNumber((prev) => prev + 4);
       else clearInterval(interval1);
     }, 50);
 
     const interval2 = setInterval(() => {
-      if (secondNumber < 400) setSecondNumber((prev) => prev + 10);
+      if (secondNumber < 400) setSecondNumber((prev) => prev + 4);
       else clearInterval(interval2);
     }, 50);
 
     const interval3 = setInterval(() => {
-      if (thirdNumber < 650) setThirdNumber((prev) => prev + 20);
+      if (thirdNumber < 650) setThirdNumber((prev) => prev + 6);
       else clearInterval(interval3);
     }, 50);
 

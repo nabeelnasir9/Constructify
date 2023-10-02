@@ -3,3 +3,27 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
+
+/* For Webkit browsers like Chrome and Safari */
+::-webkit-scrollbar {
+    width: 10px;  /* Adjust the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;  /* Adjust the track/background color of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background: red;  /* Adjust the color of the draggable handle */
+    border-radius: 5px;  /* Optional: rounded corners for the handle */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: darkred;  /* Adjust the color of the handle when hovered */
+}
+
+/* For Firefox 64 and above */
+body {
+    scrollbar-width: thin;  /* Adjust the width (can also use "auto" or "none") */
+    scrollbar-color: red #f1f1f1;  /* First color is for the thumb, second is for the track/background */
+}

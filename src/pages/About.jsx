@@ -1,6 +1,10 @@
+import RotatingIcons from "../components/RotatingIcons"
+
 const About = () => {
   return (
-    <div>About</div>
+    <div>
+      <RotatingIcons/>
+    </div>
   )
 }
 

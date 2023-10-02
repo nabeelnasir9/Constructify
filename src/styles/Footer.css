@@ -1,0 +1,117 @@
+
+
+.reveal-footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 50px 0;
+    width: 100%; /* To ensure it spans the full width of the viewport */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.footer-section-title {
+    margin-bottom: 20px;
+}
+
+.footer-logo-section {
+    flex: 1;
+}
+
+.footer-logo-img {
+    max-width: 150px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer-description {
+    max-width: 200px;
+}
+
+.footer-services-section,
+.footer-support-section,
+.footer-reachus-section {
+    flex: 1;
+}
+
+.footer-services-list, 
+.footer-support-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-service-item, 
+.footer-support-item {
+    margin: 8px 0;
+}
+
+.footer-contact {
+    margin-bottom: 10px;
+}
+
+.footer-newsletter-title {
+    margin-top: 20px;
+}
+
+.footer-newsletter-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 70%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-newsletter-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer-newsletter-btn:hover {
+    background-color: #2a80b9;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-services-section,
+    .footer-support-section,
+    .footer-reachus-section {
+        margin-top: 20px;
+    }
+
+    .footer-logo-section,
+    .footer-services-section,
+    .footer-support-section,
+    .footer-reachus-section {
+        text-align: center;
+    }
+
+    .footer-newsletter-input,
+    .footer-newsletter-btn {
+        width: 100%;
+    }
+
+    .footer-description,
+    .footer-service-item, 
+    .footer-support-item {
+        max-width: none;
+        text-align: center;
+    }
+}

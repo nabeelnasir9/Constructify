@@ -1,0 +1,144 @@
+.parallax-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax-bg {
+    background-image: url('../assets/Expertise/ParallexImage.jpg');
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.expertise-content {
+    position: relative;
+    margin: 100px 0;
+}
+
+.expertise-container {
+    max-width: 1200px;
+    margin: 0 auto; /* This centers the container */
+    padding: 0 15px; /* This gives some padding on larger screens */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center; /* Add this line to center the flex items */
+}
+
+.ExpertiseStart_heading{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    margin: 70px 0;
+}
+
+.card {
+    flex: 0 0 calc(30% - 30px);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 350px;
+    transition: all 0.7s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+}
+
+.card:hover .card-content {
+    background-color: #ffb80397;
+    /* Yellow background on hover */
+    color: white;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.card-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* Image should be above the card but below the content */
+    opacity: 0.3;
+}
+
+.card-content {
+    padding: 20px;
+    color: #ffb703;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    z-index: 3;
+    /* Highest z-index ensures content and its background overlays everything */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.card-number {
+    font-size: 2rem;
+}
+
+.card-heading {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    max-width: 300px;
+}
+
+.card-paragraph {
+    margin-top: 20px;
+    max-width: 300px;
+
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+
+}
+
+.link-button,
+.sample-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.link-button {
+    background-color: white;
+    color: #ffb703;
+    border: 2px solid #ffb703;
+}
+
+.sample-button {
+    background-color: #ffb703;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        flex: 0 0 100%; /* This will ensure one card takes the full width on mobile */
+    }
+    .ExpertiseStart_heading{
+        font-size: 35px;
+        text-align: center;
+        color: white;
+        margin: 50px 0;
+    }
+}
+
