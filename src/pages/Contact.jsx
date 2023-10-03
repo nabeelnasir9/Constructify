@@ -4,6 +4,7 @@ import Contact from "../assets/Expertise/Contact.png";
 import "../styles/Contact.css";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import videos from '../assets/Expertise/video1.mp4';
 
 
 function ContactUs() {
@@ -59,6 +60,9 @@ function ContactUs() {
 
   return (
     <div className="contactus-container">
+       <video autoPlay muted loop id="video-background">
+                <source src={videos} type="video/mp4" />
+            </video>
        <ToastContainer position="top-right" autoClose={5000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover />
       <div className="contactus-form-container">
         <h2 className="contactus-header">
