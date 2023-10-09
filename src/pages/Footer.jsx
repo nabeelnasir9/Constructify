@@ -1,5 +1,7 @@
 import '../styles/Footer.css';
-import Logo from '../assets/Home/Constructify.png';
+// import Logo from '../assets/Home/Constructify.png';
+import Logo from '../assets/About/Logo_2.png';
+import Matter from '../assets/About/matterport1.png';
 
 const Footer = () => {
     return (
@@ -7,7 +9,9 @@ const Footer = () => {
             <div className="footer-container">
                 <div className="footer-logo-section">
                     <img src={Logo} alt="Logo" className="footer-logo-img" />
-                    <p className="footer-description">Description about your website...</p>
+                    <img src={Matter} alt="Logo" className="footer-description" />
+
+                    {/* <p className="footer-description">Description about your website...</p> */}
                 </div>
 
                 <div className="footer-services-section">

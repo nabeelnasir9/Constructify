@@ -1,11 +1,11 @@
 import RotatingIcons from "../components/RotatingIcons"
-import SubscriptionCards from "../components/SubscriptionCards"
+// import SubscriptionCards from "../components/SubscriptionCards"
 
 const About = () => {
   return (
     <div>
       <RotatingIcons/>
-      <SubscriptionCards/>
+      {/* <SubscriptionCards/> */}
     </div>
   )
 }

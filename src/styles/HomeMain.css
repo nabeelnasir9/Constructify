@@ -5,12 +5,12 @@
 .home-background-iframe {
     width: 100%;
     height: 90vh;
-    border: none; 
+    border: none;
 }
 
 .overlay-content {
     position: absolute;
-    top: 50%; 
+    top: 50%;
     left: 40%;
     transform: translate(-50%, -50%);
     text-align: left;
@@ -52,7 +52,7 @@
         max-width: 100%;
         width: 300px;
     }
-    
+
     .overlay-action-button {
         font-size: 20px;
         padding: 8px 16px;
@@ -72,3 +72,231 @@
     transition: all 0.9s ease-in-out;
 }
 
+
+/* Modal */
+.custom-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+/* Container for each step */
+.step-container {
+    background: #ffffff;
+    padding: 40px 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Logo styling */
+.company-logo {
+    width: 400px;
+    display: block;
+    margin: 0 auto 20px auto;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: -100px;
+    margin-top: -100px;
+}
+
+/* Description styling */
+.company-description {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.step-logo-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.para_service_text{
+    font-size: 20px;
+    font-weight: 600;
+    color: #e0e0e0;
+}
+
+.task-card{
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.company-description_1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Label Styling */
+.service-label,
+.task-label,
+.area-label,
+.name-label,
+.email-label,
+.phone-label,
+.location-label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Input field styling */
+.service-input,
+.task-input,
+.area-input,
+.name-input,
+.email-input,
+.phone-input,
+.location-input {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Input field focus effect */
+.service-input:focus,
+.task-input:focus,
+.area-input:focus,
+.name-input:focus,
+.email-input:focus,
+.phone-input:focus,
+.location-input:focus {
+    border-color: #ffb703;
+    box-shadow: 0px 0px 5px rgba(255, 183, 3, 0.5);
+}
+
+/* Buttons styling */
+.next-button,
+.close-modal-button,
+.submit-button {
+    padding: 10px 20px;
+    background-color: #ffb703;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 22px;
+}
+
+/* Hover effect for buttons */
+.next-button:hover,
+.close-modal-button:hover,
+.submit-button:hover {
+    background-color: #ffa003;
+}
+
+
+
+.service-card,
+.task-card {
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.service-card:hover,
+.task-card:hover {
+    transform: scale(1.05);
+}
+
+.service-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.progress-bar-container {
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    /* initially 0% */
+    background-color: #ffb703;
+    border-radius: 10px;
+    transition: width 0.3s ease-in-out;
+}
+
+.step-service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 786px){
+    .step-service-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-height: 70%;
+    }
+
+    .service-input,
+.task-input,
+.area-input,
+.name-input,
+.email-input,
+.phone-input,
+.location-input {
+    width: 90%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+.company-logo {
+    width: 300px;
+    display: block;
+    margin: 0 auto 20px auto;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: -50px;
+    margin-top: -50px;
+}
+
+}

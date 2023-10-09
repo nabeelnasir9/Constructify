@@ -1,0 +1,176 @@
+.ts-slider-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+  max-width: 100%;
+  overflow: hidden;
+  background: rgb(255,255,255);
+background: linear-gradient(357deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.6) 150%);
+  padding: 0px 20px;
+  padding-left: 100px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.ts-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.ts-name {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.ts-message {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.ts-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ts-image {
+  max-width: 80%;
+  max-height: 80%;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.ts-pagination {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+  gap: 50px;
+}
+
+.ts-prev-btn,
+.ts-next-btn {
+  background-color: #ffb703;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 30px;
+  transition: background-color 0.3s;
+}
+
+.ts-prev-btn:hover,
+.ts-next-btn:hover {
+  background-color: #555;
+}
+
+/* Text animation */
+/* ... (previous styles for layout, buttons, etc., remain unchanged) */
+
+/* Text and Image Animations */
+@keyframes slideFadeInText {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomFadeInImage {
+    from {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.ts-content {
+    animation: slideFadeInText 1s forwards;
+}
+
+.ts-image {
+    animation: zoomFadeInImage 1s forwards;
+}
+
+/* Fade Transitions for Slide Change */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.ts-content.fadeOut,
+.ts-image-container.fadeOut {
+    animation: fadeOut 1s forwards;
+}
+
+.ts-content.fadeIn,
+.ts-image-container.fadeIn {
+    animation: fadeIn 1s forwards;
+}
+
+@media (max-width: 768px) {
+    .ts-slider-container {
+        flex-direction: column-reverse;
+        padding-left: 30px;
+        justify-content: flex-start;
+    }
+
+    .ts-content, 
+    .ts-image-container {
+        width: 100%;
+    }
+
+    .ts-name {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .ts-message {
+        font-size: 0.9em;
+        margin-bottom: 15px;
+    }
+
+    .ts-prev-btn,
+    .ts-next-btn {
+        padding: 12px 24px; /* Larger buttons for easier touch */
+    }
+    .ts-image {
+        max-width: 80%;
+        max-height: 100%;
+        /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+      }
+}
+
+/* Tablet Responsiveness */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .ts-name {
+        font-size: 1.3em;
+        margin-bottom: 12px;
+    }
+
+    .ts-message {
+        font-size: 0.95em;
+        margin-bottom: 18px;
+    }
+}
