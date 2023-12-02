@@ -17,7 +17,7 @@ const ExpertiseEnd = () => {
         <div className="marquee-container">
             <div className="marquee">
                 {renderCategories()}
-                {renderCategories()} {/* Duplicate content for seamless transition */}
+                {renderCategories()}
             </div>
         </div>
     );

@@ -44,12 +44,14 @@
 }
 
 .quote-button {
-    padding: 8px 30px;
+    padding: 13px 20px;
     background-color: #ffb703;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
+    flex: none;
+    font-weight: 600;
 }
 .quote-button:hover {
   
@@ -91,6 +93,9 @@
 
     .navbar-menu.open {
         display: flex;
+    background-color: #ffffffd4;
+    border-radius: 50px;
+    margin-top: 8px;
     }
 
     .hamburger {
@@ -98,5 +103,16 @@
     }
     .navbar{
         height: 70px;
+    }
+    .quote-button{
+        padding: 13px 20px;
+    background-color: #ffb703;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    flex: none;
+    font-weight: 600;
+    width: 200px;
     }
 }

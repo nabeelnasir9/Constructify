@@ -4,13 +4,13 @@ import HomeMainEnd from "../components/HomeMainEnd"
 
 const Home = () => {
   return (
-    <>
+    <div className="home-section">
     <HomeMain/>
     <HomeMainEnd/>
     
     {/* <HomeMainIcon/> */}
    
-    </>
+    </div>
 
 
   )

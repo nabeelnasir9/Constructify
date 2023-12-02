@@ -5,15 +5,26 @@ import Expertise from './pages/Expertise';
 import Footer from './pages/Footer';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
+import { Element } from 'react-scroll';
 
 function App() {
   return (
     <>
     <Navbar/>
-      <Home/>
-      <About/>
-      <Expertise/>
-      <Contact/>
+    <Element name="home-section">
+                <Home />
+            </Element>
+
+            <Element name="about-section">
+                <About />
+            </Element>
+
+            <Element name="expertise-section">
+                <Expertise />
+            </Element>
+            <Element name="contact-section">
+                <Contact />
+            </Element>
       <Footer/>
     </>
   )

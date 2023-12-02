@@ -19,14 +19,12 @@ const ExpertiseStart = () => {
           <div className="card">
             <img src={Image1} alt="Heading1" className="card-bg" />
             <div className="card-content">
-              <div>
                 <span className="card-number">01</span>
                 <h2 className="card-heading">Matter Port 3D Tour</h2>
                 <p className="card-paragraph">
                   A Digital Twin of real-world space. Allows users to virtually
                   walk inside your listing anytime, anywhere.
                 </p>
-              </div>
               <div className="card-buttons">
                 <button className="link-button">Link</button>
                 <button className="sample-button">View Sample</button>

@@ -3,7 +3,7 @@ import RotatingIcons from "../components/RotatingIcons"
 
 const About = () => {
   return (
-    <div>
+    <div className="about-section">
       <RotatingIcons/>
       {/* <SubscriptionCards/> */}
     </div>

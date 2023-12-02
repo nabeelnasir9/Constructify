@@ -1,0 +1,22 @@
+/* src/components/Projects.css */
+.projects-container {
+    width: 100%;
+    overflow-x: hidden; /* Initially hide horizontal scrollbar */
+  }
+  
+  .cards-wrapper {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure cards are in a single row */
+    padding: 10px; /* Adjust as needed */
+  }
+  
+  .card {
+    flex: 0 0 auto; /* Avoid cards shrinking */
+    margin-right: 10px; /* Adjust spacing between cards */
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+  }
+  

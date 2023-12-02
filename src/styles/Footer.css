@@ -75,14 +75,14 @@
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
-    background-color: #3498db;
+    background-color: #ffb703;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .footer-newsletter-btn:hover {
-    background-color: #2a80b9;
+    background-color: #ffb703;
 }
 
 /* Mobile Responsive */
@@ -110,10 +110,17 @@
         width: 100%;
     }
 
-    .footer-description,
-    .footer-service-item, 
     .footer-support-item {
         max-width: 150px;
+        text-align: center;
+    }
+    .footer-description {
+        max-width: 150px;
+        text-align: center;
+    }
+  
+    .footer-service-item {
+        max-width: 250px;
         text-align: center;
     }
 }
