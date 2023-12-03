@@ -107,7 +107,8 @@
 
     .footer-newsletter-input,
     .footer-newsletter-btn {
-        width: 100%;
+        width: 90%;
+        margin-right: 0;
     }
 
     .footer-support-item {

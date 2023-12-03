@@ -294,6 +294,20 @@ const Navbar = () => {
                 Expertise
             </Link>
             <Link
+                to="team-section"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={2000}
+                style={{ textDecoration: "none", color: "black" }}
+                className="navbar-item"
+s
+
+            >
+                Team
+            </Link>
+
+            <Link
                 to="contact-section"
                 spy={true}
                 smooth={true}
