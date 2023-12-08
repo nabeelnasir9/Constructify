@@ -10,17 +10,17 @@ import Image_3 from '../assets/About/Image_3.png';
 const testimonials = [
     { 
         name: 'Farhan Aslam', 
-        message: 'From the onset, the Constructify team exhibited impeccable management skills. Their seamless communication and coordination made our collaboration effortless and productive. Kudos to a team that genuinely understands the essence of great work!',
+        message: 'From the onset, the Constructifeye team exhibited impeccable management skills. Their seamless communication and coordination made our collaboration effortless and productive. Kudos to a team that genuinely understands the essence of great work!',
         imageUrl: Image_1
     },
     {
         name: 'Faheem Aslam',
-        message: 'Constructify management and team have impressed me beyond measure. Their attention to detail and unwavering commitment to our project ensured its success. In a field where teamwork is paramount, their team demonstrated excellence every step of the way.',
+        message: 'Constructifeye management and team have impressed me beyond measure. Their attention to detail and unwavering commitment to our project ensured its success. In a field where teamwork is paramount, their team demonstrated excellence every step of the way.',
         imageUrl: Image_2
     },
     {
         name: 'Amir Saeed',
-        message: 'Constructify 3D scanning and estimation services are truly top-notch. The precision and clarity of the scans saved us both time and resources. Their accurate estimations gave us the confidence to proceed with our project. They are definitely leading the way in innovative construction solutions.',
+        message: 'Constructifeye 3D scanning and estimation services are truly top-notch. The precision and clarity of the scans saved us both time and resources. Their accurate estimations gave us the confidence to proceed with our project. They are definitely leading the way in innovative construction solutions.',
         imageUrl: Image_3
     },
 ];

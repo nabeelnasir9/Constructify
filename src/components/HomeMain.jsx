@@ -27,7 +27,7 @@ const services = [
 
 ];
 
-const tasks = ["Scheduling A Demo", "Pricing Information", "Scheduling A 3D Capture", "Speaking With A Constructify Specialist" , "A Partnership / Reseller Agreement", "Joining the Constructify Team" , "Others"];
+const tasks = ["Scheduling A Demo", "Pricing Information", "Scheduling A 3D Capture", "Speaking With A Constructifeye Specialist" , "A Partnership / Reseller Agreement", "Joining the Constructifeye Team" , "Others"];
 
 const HomeMain = () => {
   const matterportURL =
@@ -92,7 +92,7 @@ const HomeMain = () => {
         return (
           <div className="step-logo-container">
             <img src={Logo} alt="Company Logo" className="company-logo" />
-            <p className="company-description">Schedule A Demo, Speak With A Constructify Specialist, or Schedule A 3D Capture We will reach out to you ASAP to assist</p>
+            <p className="company-description">Schedule A Demo, Speak With A Constructifeye Specialist, or Schedule A 3D Capture We will reach out to you ASAP to assist</p>
             <p className="company-description_1">Form will take only few minutes of you.</p>
 
             <button className="next-button" onClick={handleNextStep}>

@@ -31,9 +31,9 @@ const tasks = [
   "Scheduling A Demo",
   "Pricing Information",
   "Scheduling A 3D Capture",
-  "Speaking With A Constructify Specialist",
+  "Speaking With A Constructifeye Specialist",
   "A Partnership / Reseller Agreement",
-  "Joining the Constructify Team",
+  "Joining the Constructifeye Team",
   "Others",
 ];
 
@@ -97,7 +97,7 @@ const Navbar = () => {
           <div className="step-logo-container">
             <img src={Logo1} alt="Company Logo" className="company-logo" />
             <p className="company-description">
-              Schedule A Demo, Speak With A Constructify Specialist, or Schedule
+              Schedule A Demo, Speak With A Constructifeye Specialist, or Schedule
               A 3D Capture We will reach out to you ASAP to assist
             </p>
             <p className="company-description_1">
