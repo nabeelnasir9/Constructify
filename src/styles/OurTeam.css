@@ -1,0 +1,41 @@
+.ourteam-wrapper {
+    margin: 0 auto;
+}
+
+.ourteam-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ourteam-mainheading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.ourteam-head-heading {
+
+    font-size: 65px;
+    margin: 0;
+    font-weight: 800;
+}
+
+.ourteam-mainpara {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.ourteam-mainImage{
+    width: 100%;
+    height: auto;
+    margin-bottom: -5px;
+    margin-top: 40px;
+}

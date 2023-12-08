@@ -23,12 +23,13 @@ function App() {
       <Element name="expertise-section">
         <Expertise />
       </Element>
-      <Element name="contact-section">
-        <Contact />
-      </Element>
       <Element name="team-section">
         <OurTeam />
       </Element>
+      <Element name="contact-section">
+        <Contact />
+      </Element>
+      
       <Footer />
     </>
   );
