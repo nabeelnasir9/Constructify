@@ -1,5 +1,7 @@
 import '../styles/OurTeam.css'
 import Timage from '../assets/Ourteam/ourteam.png';
+// import { FaLocationDot } from "react-icons/fa6";
+
 const Ourteams = () => {
   return (
     <div className="ourteam-wrapper">
