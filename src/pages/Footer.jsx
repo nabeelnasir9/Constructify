@@ -43,7 +43,7 @@ const Footer = () => {
                 <div className="footer-reachus-section">
                     <h2 className="footer-section-title">Reach Us</h2>
                     <p className="footer-contact">Email: Constructifeye@gmail.com</p>
-                    <p className="footer-contact">Address: 182-A, Sector-C, Bahria Town, Lahore</p>
+                    <p className="footer-contact">Address: Winnipeg,Canada</p>
                     <p className="footer-contact">Phone: +92 320 2367 367</p>
                     <p className="footer-contact">Support: +92 318 4111 969</p>
 
